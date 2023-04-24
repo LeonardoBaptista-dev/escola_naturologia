@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Escola de Naturologia Online</title>
+	<!-- Importar arquivos CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand ml-5" href="#">Escola de Naturologia Online</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'login' %}">Entrar</a>
+				</li>
+				<li class="nav-iteem">
+					<a class="nav-link" href="{% url 'cadastro' %}">Cadastrar</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Banner -->
+	<section class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 style="color: black;">Bem-vindo à Escola de Naturologia Online</h1>
+					<p style="color: black;">Conheça nossos cursos de naturologia e aprenda a cuidar da sua saúde de forma natural e sustentável.</p>
+					<a href="{% url 'plataforma' %}" class="btn btn-primary btn-lg" style="color: black;">Acessar Plataforma</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cursos -->
+	<section class="cursos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Nossos cursos</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Curso de Fitoterapia</h5>
+							<p class="card-text">Aprenda a utilizar plantas medicinais para prevenir e tratar doenças, descubra suas propriedades terapêuticas e os métodos para extrair seus princípios ativos. No curso de Fitoterapia, você terá a oportunidade de conhecer as plantas mais utilizadas na medicina natural e aprender a preparar remédios caseiros para cuidar da sua saúde e de sua família</p>
+							<a href="#" class="btn btn-primary">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Curso de Aromaterapia</h5>
+                            <p class="card-text">Aromaterapia é uma terapia alternativa que utiliza óleos essenciais naturais para melhorar a saúde física, emocional e mental. Neste curso, você aprenderá como os óleos essenciais podem ser utilizados para tratar diversos problemas de saúde, como ansiedade, estresse, insônia e dores musculares. Também irá descobrir como usar diferentes técnicas para extrair os óleos essenciais, como escolher o melhor óleo para cada situação e como aplicá-los de forma segura e eficaz.</p>
+							<a href="#" class="btn btn-primary">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Curso de Alimentação Natural</h5>
+							<p class="card-text">Aprenda a preparar receitas saudáveis e deliciosas, baseadas em alimentos naturais e integrais. Neste curso, você irá descobrir os benefícios de uma alimentação saudável e nutritiva, conhecer os alimentos que devem ser evitados e aprender a escolher os melhores alimentos para a sua saúde. Além disso, você irá aprender técnicas de preparação de alimentos que preservam seus nutrientes e sabor, garantindo uma alimentação rica e equilibrada para toda a sua família.</p>
+							<a href="#" class="btn btn-primary">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Rodapé -->
+	<footer class="rodape">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Escola de Naturologia Online</h3>
+					<p>Aprenda a cuidar da sua saúde de forma natural e sustentável.</p>
+				</div>
+				<div class="col-md-4">
+					<h3>Links úteis</h3>
+					<ul>
+						<li><a href="#">Política de privacidade</a></li>
+						<li><a href="#">Termos de uso</a></li>
+						<li><a href="#">Fale conosco</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>Siga-nos</h3>
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Importar arquivos JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
